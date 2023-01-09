@@ -1,0 +1,9 @@
+p{
+    color: green;
+    font-size: 30px;
+}
+body{
+    background-color: antiquewhite;
+    background-position: 10px 30px;
+    background-repeat: no-repeat;
+}

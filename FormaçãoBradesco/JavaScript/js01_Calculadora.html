@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="FormCalculadora" action=" " method="post">
+        Entre com o valor 1: <input type="number" name="n1" /><p></p>
+        Entre com o valor 2: <input type="number" name="n2" /><p></p>
+        <input type="button" name="btn_somar" value="Somar" onclick="somar()" />
+        <input type="reset" name="btn_apagar" value="Apagar" />
+    </form>
+
+    <script language="JavaScript">
+        var n1;
+        var n2;
+        var soma;
+
+        function somar(){
+            n1 = parseInt(document.FormCalculadora.n1.value);
+            n2 = parseInt(document.FormCalculadora.n2.value);
+            soma = n1 + n2;
+            window.alert('A soma é: ' + soma);
+        }
+    </script>
+</body>
+</html>

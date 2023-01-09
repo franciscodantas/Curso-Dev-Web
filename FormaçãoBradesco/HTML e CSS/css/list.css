@@ -1,0 +1,8 @@
+p{
+    color: green;
+    font-size: 30px;
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}

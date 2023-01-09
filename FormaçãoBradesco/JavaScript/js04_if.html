@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script language="JavaScript">
+        /* Objetivo: Ler dois valores e apresenta-los em ordem
+        crescente
+        */
+
+        var n1;
+        var n2;
+
+        n1 = parseInt(window.prompt('Informe o primeiro valor:', '00'));
+        n2 = parseInt(window.prompt('Informe o segundo valor:', '00'));
+
+        document.write('número 1: ' + n1 + ', número 2: ' + n2);
+
+        if(n1 > n2){
+            var n3;
+            n3 = n1;
+            n1 = n2;
+            n2 = n3;
+        }
+
+        document.write('<p><b>Classificação em Ordem Crescente: </b>' + n1 + ' e ' + n2);
+    </script>
+</body>
+</html>

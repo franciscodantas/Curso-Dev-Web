@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Formulário de Consulta de Curso</h3>
+    <p>
+        <form name="formcurso" action="" method="post">
+            Digite seu curso: <input type="text" name="f_curso" size="8" maxlength="4"> (SIST) <p></p>
+            <input type="button" name="btn_validar" value="Validar" onclick="codcurso()">
+            <input type="reset" value="Cancelar">
+            Código do Curso: <input type="text" name="f_cod" size="15" maxlength="10">
+        </form>
+
+        <script linguage="JavaScript">
+            function codcurso(){
+                var cursodig = document.formcurso.f_curso.value;
+                if(cursodig.toUpperCase() == 'SIST'){
+                    document.formcurso.f_cod.value = 'SIST001/FB';
+                }
+                else{
+                    window.alert('Curso Inválido');
+                }
+            }
+        </script>
+</body>
+</html>

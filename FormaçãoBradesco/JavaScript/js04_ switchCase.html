@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="FormCalend" action="" method="post">
+        Digite o m&ecirc;s (01 a 12): <input type="text" name="f_mes" size="4" maxlength="2"/><p></p>
+        <input type="button" name="btn_processar" value="Processar" onclick="verificaMes()" />
+        <input type="reset" name="btn_cancelar" value="Cancelar" />
+        O M&ecirc;s correspondente &eacute;: <input type="text" name="f_nomemes" size="18" maxlength="15" />
+    </form>
+
+    <script language="JavaScript">
+        <!--
+            var js_mes;
+
+            function verificaMes(){
+                js_mes = parseInt(document.FormCalend.f_mes.value);
+
+                switch(js_mes){
+                    case 1: 
+                        document.FormCalend.f_nomemes.value = 'Janeiro';
+                        break;
+                    case 2: 
+                        document.FormCalend.f_nomemes.value = 'Fevereiro';
+                        break;
+                    case 3:
+                        document.FormCalend.f_nomemes.value = 'Março';
+                        break;
+                    case 4:
+                        document.FormCalend.f_nomemes.value = 'Abril';
+                        break;
+                    case 5:
+                        document.FormCalend.f_nomemes.value = 'Maio';
+                        break;
+                    case 6:
+                        document.FormCalend.f_nomemes.value = 'Junho';
+                        break;
+                    case 7:
+                        document.FormCalend.f_nomemes.value = 'Julho';
+                        break;
+                    case 8:
+                        document.FormCalend.f_nomemes.value = 'Agosto';
+                        break;
+                    case 9:
+                        document.FormCalend.f_nomemes.value = 'Setembro';
+                        break;
+                    case 10:
+                        document.FormCalend.f_nomemes.value = 'Outubro';
+                        break;
+                    case 11:
+                        document.FormCalend.f_nomemes.value = 'Novembro';
+                        break;
+                    case 12:
+                        document.FormCalend.f_nomemes.value = 'Desembro';
+                        break;
+                    default:
+                        document.FormCalend.f_nomemes.value = '** Mês Inválido **';
+                        break;
+                }
+            }
+        -->
+    </script>
+</body>
+</html>
